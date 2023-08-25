@@ -1,0 +1,101 @@
+
+html{
+  --border: 1px solid #000;
+  --width: 300px;
+  --bg: #446444;
+  --hugeText: 60px;
+  --bigText: 33px;
+  --smallText: 24px;
+  --white: #fff;
+  
+}
+html ol {
+  list-style: none;
+}
+
+.clear { width: 100%; clear: both; }
+.card { 
+  float: left; width: var(--width); height: auto; background-color: var(--bg); border-radius: 10px; padding: 10px; }
+button { text-align: center; margin: 20px;}
+.game {
+  display: flex;
+  width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+.coments {
+  text-align: center;
+}
+.cardPlayer {
+  width: 50%;
+  border: 1px solid #000;
+  text-align: center;
+}
+.cardPlayer .mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  color: red;
+  opacity: 0.6;
+  font-size: 40px;
+}
+.bingo {
+  width: 50%;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 20px;
+}
+.bingo button {
+  text-align: center;
+}
+.bola {
+  font-size: 50px;
+  display: block;
+  margin: 20px auto;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+.headers > div { 
+  float: left;  
+  text-align: center; 
+}
+.headers > div span { font-size: var(--bigText); color: #fff; font-weight: bold; display: inline-block; width: 60px;}
+.column { float: left; width: 60px;; text-align: center; }
+.number { padding: 20px 0; border: var(--border); background-color: var(--white); position: relative;}
+.number span { color: #000; font-size: var(--smallText); }
+.number span:hover { text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.flicker {
+  font-size: 40px;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
