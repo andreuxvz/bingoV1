@@ -3,8 +3,8 @@
 # dependencies
 /back/node_modules
 /back/dist
-/front/dist
-/front/node_modules
+/frontend/dist
+/frontend/node_modules
 /.pnp
 .pnp.js
 
