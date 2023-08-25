@@ -236,7 +236,9 @@ export const createBingo = async (req: Request, res: Response) => {
       const bingo = await bingoService.createBingo({ numbers: arrBingo });
       res.json({ data: { bingo, bingoOrdered }, status: "success" });
     } catch (error) {
-      res.status(500).json({ status: "No se pudo adquirir la cartilla" });
+      res
+        .status(500)
+        .json({ err: error, status: "No se pudo adquirir la cartilla" });
     }
   } catch (err: any) {
     res.status(500).json({ error: err.message });
